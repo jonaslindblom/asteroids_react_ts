@@ -1,0 +1,131 @@
+.container
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  height: 100vh
+  overflow-y: auto
+  overflow-x: hidden
+  background-color: #2f4f4f
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%239C92AC' fill-opacity='0.12'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%239C92AC' fill-opacity='0.12'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E")
+
+  @media (min-height: 600px)
+    justify-content: space-around
+
+  .topButtons
+    position: absolute
+    top: 0
+    right: 0
+
+  .infoButton
+    background-color: tomato
+    color: white
+    font-size: clamp(16px, 4vmin, 30px)
+    height: clamp(30px, 6vmin, 40px)
+    width: clamp(30px, 6vmin, 40px)
+    border-radius: 50%
+    cursor: pointer
+    text-transform: uppercase
+    margin: 3vmin
+    padding: 0
+
+    @media (hover: hover) and (pointer: fine)
+    &:hover
+      background-color: brown
+
+  .content
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    color: tomato
+    min-width: 320px
+    height: 100%
+    min-height: 568px
+    overflow: hidden
+
+    .version
+      position: absolute
+      left: 0
+      top: 0
+      font-size: clamp(10px, 2vmin, 20px)
+      font-weight: bolder
+      color: gray
+      margin: 3vmin
+
+    .logo
+      margin-top: 48px
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      .prefix
+        font-size: 6vmin
+        font-family: "Pacifico", cursive
+        text-shadow: 1px 1px 10px #fff
+        color: lightgray
+        transform: translate(-100%, 30%) rotate(-13deg)
+
+      .title
+        font-size: clamp(3rem, 12vmin, 10rem)
+        text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
+        margin: 8px
+        margin-top: 8px
+
+    .suffix
+      font-size: 4vmin
+      font-family: "Pacifico", cursive
+      text-shadow: 1px 1px 10px #fff
+      color: lightgray
+      text-align: center
+
+    .ship
+      width: 25vmin
+      height: 25vmin
+      max-width: 200px
+      display: flex
+      justify-content: center
+      align-items: center
+      animation: spin 10s linear infinite
+
+      @keyframes spin
+        0%
+          transform: rotate(0deg)
+        100%
+          transform: rotate(360deg)
+
+    .playButtons
+      display: flex
+      flex-wrap: nowrap
+      gap: 8px
+      justify-content: center
+      align-items: center
+      width: 100%
+
+      .playButton
+        font-size: 3vmin
+        font-weight: bolder
+        cursor: pointer
+
+      @media (hover: hover) and (pointer: fine)
+        button:hover
+          background-color: brown
+
+    .highscore
+      text-align: center
+      font-size: clamp(12px, 4vmin, 20px)
+      margin: 1vmin
+      color: gray
+
+    .bottomButtons
+      font-size: 0.75rem
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      margin: 1vmin
+      gap: 12px
+
+    .bottomSpace
+      width: 100%
+      height: 42px

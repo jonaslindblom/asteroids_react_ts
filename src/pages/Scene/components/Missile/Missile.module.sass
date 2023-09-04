@@ -1,0 +1,27 @@
+@keyframes pulsate
+    0%
+        transform: scale(1)
+        opacity: 1
+    50%
+        transform: scale(1.2)
+        opacity: 0.75
+    100%
+        transform: scale(1)
+        opacity: 1
+
+.missile
+    position: absolute
+    animation: pulsate 0.75s ease-in-out infinite
+
+.missile circle
+    animation: color-pulse 0.75s ease-in-out infinite
+
+@keyframes color-pulse
+    0%
+        fill: yellow
+    33%
+        fill: orange
+    66%
+        fill: red
+    100%
+        fill: yellow

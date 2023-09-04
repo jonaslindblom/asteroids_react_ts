@@ -1,0 +1,38 @@
+.scoreBoard
+  width: auto
+  height: 60px
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  background-color: rgba(47, 79, 70, 0.5)
+  opacity: 1
+  border-radius: 8px
+  margin: 24px
+  padding: 12px
+
+  .score
+    color: yellow
+    opacity: 1
+    font-weight: bolder
+
+  .efficiency
+    color: yellow
+    opacity: 1
+    font-weight: lighter
+
+  @keyframes grow
+    0%
+      transform: scale(1)
+    25%
+      transform: scale(1.1)
+    50%
+      transform: scale(1)
+    75%
+      transform: scale(0.9)
+    100%
+      transform: scale(1)
+
+  &.grow
+    animation: grow 0.5s
+    transform-origin: center

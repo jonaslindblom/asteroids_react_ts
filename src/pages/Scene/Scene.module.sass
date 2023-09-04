@@ -1,0 +1,59 @@
+.root
+  position: relative
+  width: 100vw
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  user-select: none
+
+  .scene
+    width: 100%
+    height: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    display: flex
+    justify-content: center
+    align-items: center
+    background-image: url("./assets/bg.jpg")
+    animation: fadeIn 1s linear
+
+    @keyframes fadeIn
+      0%
+        opacity: 0
+      100%
+        opacity: 1
+
+  .scoreBoard
+    position: absolute
+    top: 0
+    left: 0
+
+  .grow
+    animation: grow 0.5s
+    transform-origin: center
+
+    @keyframes grow
+      0%
+        opacity: 1
+        transform: scale(1)
+      25%
+        transform: scale(1.1)
+      50%
+        transform: scale(1)
+      75%
+        transform: scale(0.9)
+      100%
+        transform: scale(1)
+
+  .explode
+    animation: explode 0.5s forwards
+    transform-origin: center
+
+    @keyframes explode
+      0%
+        transform: scale(1) rotate(0deg)
+      100%
+        transform: scale(6) rotate(360deg)
+        opacity: 0

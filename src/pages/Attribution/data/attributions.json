@@ -1,0 +1,80 @@
+[
+    {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "path",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git://github.com/jinder/path.git",
+        "remoteVersion": "0.12.7",
+        "installedVersion": "0.12.7",
+        "definedVersion": "^0.12.7",
+        "author": "Joyent http://www.joyent.com"
+    },
+    {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "qrcode.react",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "ISC",
+        "link": "git+https://github.com/zpao/qrcode.react.git",
+        "remoteVersion": "3.1.0",
+        "installedVersion": "3.1.0",
+        "definedVersion": "^3.1.0",
+        "author": "Paul O’Shannessy <paul@oshannessy.com>"
+    },
+    {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "react",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/facebook/react.git",
+        "remoteVersion": "18.2.0",
+        "installedVersion": "18.2.0",
+        "definedVersion": "^18.2.0",
+        "author": "n/a"
+    },
+    {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "react-dom",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/facebook/react.git",
+        "remoteVersion": "18.2.0",
+        "installedVersion": "18.2.0",
+        "definedVersion": "^18.2.0",
+        "author": "n/a"
+    },
+    {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "react-router-dom",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/remix-run/react-router.git",
+        "remoteVersion": "6.15.0",
+        "installedVersion": "6.15.0",
+        "definedVersion": "^6.15.0",
+        "author": "Remix Software <hello@remix.run>"
+    },
+    {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "vite-plugin-svgr",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/pd4d10/vite-plugin-svgr.git",
+        "remoteVersion": "3.2.0",
+        "installedVersion": "3.2.0",
+        "definedVersion": "^3.2.0",
+        "author": "Rongjian Zhang"
+    }
+]

@@ -1,0 +1,69 @@
+@keyframes fadeIn
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+.gameOver
+    width: 300px
+    min-height: 240px
+    background: darkslategray
+    color: white
+    z-index: 10
+    border-radius: 16px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+    &Header
+        height: 50px
+        background: darkslategray
+        overflow: hidden
+        border-top-left-radius: 16px
+        border-top-right-radius: 16px
+
+    .heading
+        margin: 0
+        padding: 10px
+        color: darkslategray
+        font-weight: 500
+        text-align: center
+        font-size: 2em
+        text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc
+
+    .gameOverContent
+        padding: 10px
+        font-size: 16px
+        color: white
+        text-align: center
+
+    .messageContainer
+        animation: fadeIn 1s forwards
+
+    .actionsContainer
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        gap: 24px
+        margin: 12px
+
+    .okBtn
+        font-size: 10pt
+        font-weight: bolder
+
+    .party
+        font-size: 32px
+        margin-bottom: 12px
+
+    .message
+        text-align: left
+        font-size: 10pt
+        font-weight: bolder
+
+    .party
+        font-size: 32px
+        margin-bottom: 12px
+
+    .message
+        text-align: left
